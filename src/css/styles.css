@@ -76,7 +76,6 @@ body {
 
 .nav-list {
     list-style-type: none;
-    display: none;
     flex-direction: column;
     justify-content: flex-end;
     position: absolute;
@@ -86,6 +85,10 @@ body {
     padding: 1.5rem;
     width: 100%;
     box-shadow: var(--bs);
+    display: flex;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
 }
 
 .nav__logo {
@@ -102,6 +105,10 @@ body {
     padding-left: 1.5rem;
     color: var(--clr-light);
     width: 100%;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out 0ms;
+    text-transform: uppercase;
+    letter-spacing: .25rem;
 }
 
 .nav-list__item a:hover {
@@ -120,6 +127,7 @@ body {
     height: 100%;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .nav-toggle-label span,
@@ -148,8 +156,14 @@ body {
 }
 
 .nav-toggle:checked ~ .nav-list {
-    display: flex;
+    transform: scale(1, 1);
 }
+
+.nav-toggle:checked ~ .nav-list a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+}
+
 
 
 /* Header Styling */ 
