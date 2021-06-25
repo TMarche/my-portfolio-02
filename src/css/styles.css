@@ -21,7 +21,7 @@ body {
 }
 
 .nav {
-    margin: 2rem 0;
+    margin: 1rem 0;
     display: flex;
     justify-content: space-between;
 }
@@ -47,11 +47,10 @@ body {
 
 .header {
     position: relative;
-    /* background-color: #B44; */
     background-image: linear-gradient(
         to right bottom,
         #B44,
-        #A90011,
+        #A90011
     );
     background-size: cover;
     background-position: top;
@@ -84,6 +83,11 @@ body {
     font-size: 1rem;
 
 }
+
+
+
+
+/* Animations */
 
 @keyframes line-anim{
     to {
