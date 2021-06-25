@@ -2,14 +2,15 @@ import "../css/styles.css"
 
 const App = () => {
     return (
-        <div>
+        <>
             <nav className="nav">
                 <div className="nav__logo">TJAM</div>
                 <ul className="nav-list">
                     <li className="nav-list__item"><a href="#">Home</a></li>
-                    <li className="nav-list__item"><a href="#">About</a></li>
-                    <li className="nav-list__item"><a href="#">My Work</a></li>
-                    <li className="nav-list__item"><a href="#">Contact</a></li>
+                    <li className="nav-list__item"><a href="#about">About</a></li>
+                    <li className="nav-list__item"><a href="#blog">Blog</a></li>
+                    <li className="nav-list__item"><a href="#my-skills">My Skills</a></li>
+                    <li className="nav-list__item"><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <div className="header">
@@ -20,8 +21,30 @@ const App = () => {
                     <button className="btn header__btn">Contact Me</button>
                 </div>
             </div>
+            <div className="content">
+                <section id="about" className="about">
+                    <div>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minus? Impedit blanditiis id saepe omnis iusto perferendis incidunt provident distinctio, porro, et reiciendis laboriosam placeat cum eos sequi eveniet, sapiente consequatur neque reprehenderit. Doloribus consequuntur, impedit eaque iure libero animi at rerum ut repellendus architecto autem, eligendi recusandae sint! Libero modi enim nam totam officia delectus eos cum doloremque ad quae inventore optio, neque officiis vero in necessitatibus similique voluptate alias? Modi ratione quam similique, porro eligendi voluptatum tempora? At ducimus quasi dicta laboriosam porro rerum, consequatur alias unde commodi delectus officia voluptatem, modi amet odio aperiam quo sed facere esse fugiat quam incidunt quas eos! Deleniti numquam tempora quas blanditiis in quia illo iusto qui magni nulla recusandae quis saepe facere, laborum cupiditate incidunt corporis at mollitia repellat nobis voluptates autem inventore. Veritatis quisquam atque voluptatibus porro rem nihil deserunt et vero facilis commodi deleniti repellat dolorem temporibus, neque numquam fugiat aut sunt ipsum nemo officia eaque consectetur ea pariatur quia. Natus cupiditate unde saepe voluptate placeat sit modi nulla distinctio consectetur in a ipsam cum, harum veritatis. Nihil alias eaque voluptates maiores quae dicta ut deserunt et, vel hic error nostrum tenetur a, ipsum at suscipit ratione aliquam.
+                    </div>
+                </section>
+                <section id="blog" className="blog">
+                    <div>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minus? Impedit blanditiis id saepe omnis iusto perferendis incidunt provident distinctio, porro, et reiciendis laboriosam placeat cum eos sequi eveniet, sapiente consequatur neque reprehenderit. Doloribus consequuntur, impedit eaque iure libero animi at rerum ut repellendus architecto autem, eligendi recusandae sint! Libero modi enim nam totam officia delectus eos cum doloremque ad quae inventore optio, neque officiis vero in necessitatibus similique voluptate alias? Modi ratione quam similique, porro eligendi voluptatum tempora? At ducimus quasi dicta laboriosam porro rerum, consequatur alias unde commodi delectus officia voluptatem, modi amet odio aperiam quo sed facere esse fugiat quam incidunt quas eos! Deleniti numquam tempora quas blanditiis in quia illo iusto qui magni nulla recusandae quis saepe facere, laborum cupiditate incidunt corporis at mollitia repellat nobis voluptates autem inventore. Veritatis quisquam atque voluptatibus porro rem nihil deserunt et vero facilis commodi deleniti repellat dolorem temporibus, neque numquam fugiat aut sunt ipsum nemo officia eaque consectetur ea pariatur quia. Natus cupiditate unde saepe voluptate placeat sit modi nulla distinctio consectetur in a ipsam cum, harum veritatis. Nihil alias eaque voluptates maiores quae dicta ut deserunt et, vel hic error nostrum tenetur a, ipsum at suscipit ratione aliquam.
+                    </div>
+                </section>
+                <section id="my-skills" className="my-skills">
+                    <div>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minus? Impedit blanditiis id saepe omnis iusto perferendis incidunt provident distinctio, porro, et reiciendis laboriosam placeat cum eos sequi eveniet, sapiente consequatur neque reprehenderit. Doloribus consequuntur, impedit eaque iure libero animi at rerum ut repellendus architecto autem, eligendi recusandae sint! Libero modi enim nam totam officia delectus eos cum doloremque ad quae inventore optio, neque officiis vero in necessitatibus similique voluptate alias? Modi ratione quam similique, porro eligendi voluptatum tempora? At ducimus quasi dicta laboriosam porro rerum, consequatur alias unde commodi delectus officia voluptatem, modi amet odio aperiam quo sed facere esse fugiat quam incidunt quas eos! Deleniti numquam tempora quas blanditiis in quia illo iusto qui magni nulla recusandae quis saepe facere, laborum cupiditate incidunt corporis at mollitia repellat nobis voluptates autem inventore. Veritatis quisquam atque voluptatibus porro rem nihil deserunt et vero facilis commodi deleniti repellat dolorem temporibus, neque numquam fugiat aut sunt ipsum nemo officia eaque consectetur ea pariatur quia. Natus cupiditate unde saepe voluptate placeat sit modi nulla distinctio consectetur in a ipsam cum, harum veritatis. Nihil alias eaque voluptates maiores quae dicta ut deserunt et, vel hic error nostrum tenetur a, ipsum at suscipit ratione aliquam.
+                    </div>
+                </section>
+                <section id="contact" className="contact">
+                    <div>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minus? Impedit blanditiis id saepe omnis iusto perferendis incidunt provident distinctio, porro, et reiciendis laboriosam placeat cum eos sequi eveniet, sapiente consequatur neque reprehenderit. Doloribus consequuntur, impedit eaque iure libero animi at rerum ut repellendus architecto autem, eligendi recusandae sint! Libero modi enim nam totam officia delectus eos cum doloremque ad quae inventore optio, neque officiis vero in necessitatibus similique voluptate alias? Modi ratione quam similique, porro eligendi voluptatum tempora? At ducimus quasi dicta laboriosam porro rerum, consequatur alias unde commodi delectus officia voluptatem, modi amet odio aperiam quo sed facere esse fugiat quam incidunt quas eos! Deleniti numquam tempora quas blanditiis in quia illo iusto qui magni nulla recusandae quis saepe facere, laborum cupiditate incidunt corporis at mollitia repellat nobis voluptates autem inventore. Veritatis quisquam atque voluptatibus porro rem nihil deserunt et vero facilis commodi deleniti repellat dolorem temporibus, neque numquam fugiat aut sunt ipsum nemo officia eaque consectetur ea pariatur quia. Natus cupiditate unde saepe voluptate placeat sit modi nulla distinctio consectetur in a ipsam cum, harum veritatis. Nihil alias eaque voluptates maiores quae dicta ut deserunt et, vel hic error nostrum tenetur a, ipsum at suscipit ratione aliquam.
+                    </div>
+                </section>
+            </div>
 
-        </div>
+        </>
     ) 
 }
 
