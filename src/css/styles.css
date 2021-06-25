@@ -62,21 +62,21 @@ body {
 /* Navigation Styling */
 
 .nav {
+    position: sticky;
+    top: 0;
+    background-color: white;
     display: flex;
     justify-content: space-between;
-    position: sticky;
-    background-color: white;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    top: 0;
     font-size: 2.4rem;
-    z-index: 2;
     box-shadow: var(--bs);
+    z-index: 2;
 }
 
 .nav-list {
     list-style-type: none;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: flex-end;
     position: absolute;
@@ -85,21 +85,70 @@ body {
     background:var(--clr-accent);
     padding: 1.5rem;
     width: 100%;
-    box-shadow: var(--bs)
+    box-shadow: var(--bs);
 }
 
 .nav__logo {
-    margin-left: 3rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.nav-list__item {
+    width: 100%;
 }
 
 .nav-list__item a {
     text-decoration: none;
     padding-left: 1.5rem;
     color: var(--clr-light);
+    width: 100%;
 }
 
 .nav-list__item a:hover {
     color: var(--clr-dark);
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 3rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display: block;
+    background: var(--clr-dark);
+    height: 2px;
+    width: 3rem;
+    border-radius: 2px;
+    position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    content: "";
+    position: absolute;
+}
+
+.nav-toggle-label span::before {
+    bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+    top: 7px;
+}
+
+.nav-toggle:checked ~ .nav-list {
+    display: flex;
 }
 
 
