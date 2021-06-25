@@ -6,7 +6,7 @@ const App = () => {
             <nav className="nav">
                 <div className="nav__logo">TJAM</div>
                 <ul className="nav-list">
-                    <li className="nav-list__item"><a href="#">Home</a></li>
+                    <li className="nav-list__item"><a href="#about">Home</a></li>
                     <li className="nav-list__item"><a href="#about">About</a></li>
                     <li className="nav-list__item"><a href="#blog">Blog</a></li>
                     <li className="nav-list__item"><a href="#my-skills">My Skills</a></li>
