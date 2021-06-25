@@ -42,6 +42,8 @@
 
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
           0.125em 0.125em 0.25em rgba(0,0,0,.15);
+
+    --bs-light: 0.125em 0.125em 0.25em rgba(0,0,0,.15);
 }
 
 html {
@@ -111,6 +113,9 @@ body {
     animation: line-anim 5s ease forwards;
 }
 
+
+/* Header Button Styling */
+
 .header__btn {
     display: block;
     margin: 5rem auto;
@@ -120,7 +125,7 @@ body {
     background-color: white;
     outline: none;
     border: none;
-    animation: moveInBottom .5s ease-in 2s;
+    animation: moveInBottom .8s ease-in 2s;
     animation-fill-mode: backwards;
     position: relative;
 }
@@ -129,6 +134,32 @@ body {
     cursor: pointer;
     transform: translateY(-.3rem);
     box-shadow: var(--bs);
+}
+
+.header__btn:active {
+    transform: translateY(-.1rem);
+    box-shadow: var(--bs-light);
+}
+
+.header__btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    /* Needs to have a reference -- first element with pos relative that it can find */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+    background-color: white;
+}
+
+
+.header__btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
 }
 
 
@@ -155,6 +186,10 @@ body {
     0% {
         opacity: 0;
         transform: translateY(1rem);
+    }
+
+    80% {
+        transform: translateY(-.2rem);
     }
 
     100% {
