@@ -1,3 +1,12 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
 /* Colors
 #A90011
 #D11D27
@@ -7,17 +16,44 @@
 #E53C38
 */
 
+/* Custom properties -- update these for your own design */
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+:root {
+    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-secondary: 'Source Code Pro', monospace;
+
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+    --clr-light: #fff;
+    --clr-dark: #333;
+    --clr-accent: #B44;
+    --clr-dark-candy-apple-red: #A90011;
+    --clr-fire-engine-red: #D11D27;
+    --clr-antique-white: #FBEBD8;
+    --clr-floral-white: #FFFAEF;
+    --clr-cinnabar: #E53C38;
+
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+
+    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+          0.125em 0.125em 0.25em rgba(0,0,0,.15);
 }
+
+html {
+    /* Common technique to make converting to rem easy */
+    /* We want 10px --> 10 / 16 --> 62.5%*/
+    font-size: 62.5%;
+}
+
 
 body {
     font-family: sans-serif;
+    font-size: 1.6rem;
 }
 
 .nav {
@@ -49,8 +85,8 @@ body {
     position: relative;
     background-image: linear-gradient(
         to right bottom,
-        #B44,
-        #A90011
+        var(--clr-accent),
+        var(--clr-cinnabar)
     );
     background-size: cover;
     background-position: top;
@@ -79,9 +115,20 @@ body {
     display: block;
     margin: 5rem auto;
     border-radius: 10rem;
-    padding: .25em 1em;
-    font-size: 1rem;
+    padding: 1rem 5rem;
+    font-size: 2.4rem;
+    background-color: white;
+    outline: none;
+    border: none;
+    animation: moveInBottom .5s ease-in 2s;
+    animation-fill-mode: backwards;
+    position: relative;
+}
 
+.header__btn:hover {
+    cursor: pointer;
+    transform: translateY(-.3rem);
+    box-shadow: var(--bs);
 }
 
 
@@ -101,5 +148,17 @@ body {
     }
     to {
         fill: white;
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);  /*This will move it back to its original position*/ 
     }
 }
