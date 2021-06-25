@@ -13,7 +13,7 @@ const App = () => {
                     <li className="nav-list__item"><a href="#skills">Skills</a></li>
                     <li className="nav-list__item"><a href="#contact">Contact</a></li>
                 </ul>
-                <label for="nav-toggle" className="nav-toggle-label"><span></span></label>
+                <label htmlFor="nav-toggle" className="nav-toggle-label"><span></span></label>
             </nav>
             <div className="header">
                 <div className="header__content">
