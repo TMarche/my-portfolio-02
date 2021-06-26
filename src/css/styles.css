@@ -94,6 +94,7 @@ body {
 .nav__logo {
     margin: 0 auto;
     text-align: center;
+    color: var(--clr-dark);
 }
 
 .nav-list__item {
@@ -163,6 +164,72 @@ body {
     opacity: 1;
     transition: opacity 250ms ease-in-out 250ms;
 }
+
+
+@media screen and (min-width: 800px) {
+    .nav-toggle-label {
+        display: none;
+    }
+
+    .nav {
+        display: grid;
+        grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .nav__logo {
+        grid-column: 2 / span 1;
+    }
+
+    .nav-list {
+        all: unset;
+        grid-column: 3 / 4;
+        list-style-type: none;
+        text-align: center;
+        justify-content: flex-end;
+        display: flex;
+        
+    }
+
+    .nav-list a {
+        opacity: 1;
+        color: var(--clr-dark);
+        font-size: 1.6rem;
+        position: relative;
+        padding: 0;
+    }
+
+    .nav a::before,
+    .nav a::after {
+        content: "";
+        display: block;
+        height: 2px;
+        border-radius: 2px;
+        background: var(--clr-dark);
+        position: absolute;
+        right: 0;
+        left: 0;
+        transform: scale(0, 1);
+        transition: transform ease-in-out 250ms;
+    }
+
+    .nav a::before {
+        bottom: -.5rem;
+    }
+
+    .nav a::after {
+        top: -.5rem;
+    }
+
+    .nav a:hover::after,
+    .nav a:hover::before {
+        transform: scale(1, 1);
+    }
+
+}
+
+
 
 
 
