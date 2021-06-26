@@ -315,6 +315,17 @@ body {
     opacity: 0;
 }
 
+@media screen and (max-width: 800px) {
+    .header__logo  {
+        width: 300px;
+    }
+
+    .header__btn {
+        margin: 2rem auto;
+    }
+}
+
+
 /* Section Styling */
 section {
     max-width: 960px;
