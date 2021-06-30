@@ -95,10 +95,12 @@ body {
     margin: 0 auto;
     text-align: center;
     color: var(--clr-dark);
+    font-weight: 700;
+    font-style: italic;
 }
 
-.nav-list__item {
-    width: 100%;
+.nav-list__item + .nav-list__item {
+    margin-left: 0;
 }
 
 .nav-list__item a {
@@ -191,6 +193,11 @@ body {
         display: flex;
         
     }
+
+    /* Remove sibling styling */
+    .nav-list__item + .nav-list__item {
+        margin-left: 3rem;
+    }    
 
     .nav-list a {
         opacity: 1;
