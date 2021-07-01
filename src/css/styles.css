@@ -59,6 +59,43 @@ body {
 }
 
 
+/* Overall Layout */
+.site-container {
+    display: grid;
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(10, minmax(min-content, 14rem)) [center-end] minmax(6rem, 1fr) [full-end];
+}
+
+.nav {
+    grid-column: full-start / full-end;
+}
+
+.header {
+    grid-column: full-start / full-end;
+}
+
+.about {
+    grid-column: center-start / center-end;
+}
+
+.skills {
+    grid-column: center-start / center-end;
+}
+
+.blog {
+    grid-column: center-start / center-end;
+}
+
+.contact {
+    grid-column: center-start / center-end;
+}
+
+section {
+    max-width: 960px;
+}
+
+
+
+
 /* Navigation Styling */
 
 .nav {
@@ -337,9 +374,8 @@ body {
 
 /* Section Styling */
 section {
-    max-width: 960px;
-    margin: 5rem auto;
-
+    margin: 0 auto;
+    margin-top: 5rem;
 }
 
 
@@ -348,7 +384,6 @@ section {
 
 .blog__posts {
     margin-top: 3rem;
-    margin: 3rem 3rem 0rem 3rem;
     display: grid;
     grid-gap: 3rem;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));

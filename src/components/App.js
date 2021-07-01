@@ -2,7 +2,7 @@ import "../css/styles.css"
 
 const App = () => {
     return (
-        <>
+        <div className="site-container">
             <nav className="nav">
                 <div className="nav__logo">TJAM</div>
                 <input type="checkbox" id="nav-toggle" className="nav-toggle"/>
@@ -23,65 +23,62 @@ const App = () => {
                     <button className="btn header__btn">Contact Me</button>
                 </div>
             </div>
-            <div className="content">
-                <section id="about" className="about">
-                    <h2>About</h2>
-                    <div>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minus? Impedit blanditiis id saepe omnis iusto perferendis incidunt provident distinctio, porro, et reiciendis laboriosam placeat cum eos sequi eveniet, sapiente consequatur neque reprehenderit. Doloribus consequuntur, impedit eaque iure libero animi at rerum ut repellendus architecto autem, eligendi recusandae sint! Libero modi enim nam totam officia delectus eos cum doloremque ad quae inventore optio, neque officiis vero in necessitatibus similique voluptate alias? Modi ratione quam similique, porro eligendi voluptatum tempora? At ducimus quasi dicta laboriosam porro rerum, consequatur alias unde commodi delectus officia voluptatem, modi amet odio aperiam quo sed facere esse fugiat quam incidunt quas eos! Deleniti numquam tempora quas blanditiis in quia illo iusto qui magni nulla recusandae quis saepe facere, laborum cupiditate incidunt corporis at mollitia repellat nobis voluptates autem inventore. Veritatis quisquam atque voluptatibus porro rem nihil deserunt et vero facilis commodi deleniti repellat dolorem temporibus, neque numquam fugiat aut sunt ipsum nemo officia eaque consectetur ea pariatur quia. Natus cupiditate unde saepe voluptate placeat sit modi nulla distinctio consectetur in a ipsam cum, harum veritatis. Nihil alias eaque voluptates maiores quae dicta ut deserunt et, vel hic error nostrum tenetur a, ipsum at suscipit ratione aliquam.
-                    </div>
-                </section>
-                <section id="skills" className="skills">
-                    <h2>Skills</h2>
-                    <div>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore nam rerum accusantium, laboriosam architecto illo maxime vitae at vero quasi ratione, quas exercitationem cupiditate in perferendis libero odit repudiandae consequatur explicabo maiores nihil sapiente soluta voluptatem. Ex quia a sit, id quod aut dicta! Id harum, labore impedit, debitis quae, nesciunt beatae minus suscipit unde similique doloribus? Possimus odio doloremque mollitia! Voluptatem molestias soluta et sequi dignissimos nostrum, quas fugiat magnam at quidem harum optio labore alias nulla? Officiis excepturi quibusdam incidunt unde provident neque quisquam possimus perspiciatis consequatur amet, numquam aliquam id facere suscipit velit esse sint fugit veritatis! Quod molestiae voluptate, iste, magnam sit eos a, fuga quos odio itaque sed nam temporibus blanditiis quasi vero quae harum! Et quas officia, iste atque, debitis hic quae rerum sunt accusantium, sequi culpa sint? Iure, dolor? Mollitia iusto, eius porro vero minima debitis tempore atque dolores quis accusantium inventore officia incidunt, quisquam eaque ad sit repellendus culpa aut? Reiciendis odit quia esse quaerat eos eius corrupti, optio nisi, nostrum sapiente quam officia voluptates dignissimos? Quidem fugiat repellendus, similique nesciunt doloribus ducimus voluptate officiis expedita omnis molestiae itaque sequi ex dignissimos! Veniam molestiae corrupti eveniet voluptas. Repudiandae nisi, alias commodi necessitatibus assumenda veniam eveniet quia magnam magni neque, at aliquam natus, expedita rem quas aliquid. Necessitatibus magni porro molestiae hic, alias nemo, saepe inventore tenetur perspiciatis ullam officiis. Quo, laborum. Ipsa ducimus excepturi itaque beatae eum dicta nemo quae sint incidunt ad illum sit enim qui molestiae perferendis ab, repellendus sed facilis iste et temporibus nihil magnam doloremque eligendi. Commodi dolorem vel cupiditate veritatis iure minus inventore repudiandae maxime voluptates ullam molestias cumque dolores nobis corrupti, facere maiores quisquam aliquid nemo dolore amet officiis! Quae sit soluta nesciunt vitae laborum cumque quam architecto! Reprehenderit voluptatum laborum magni aliquam perspiciatis. Autem, est!
-                    </div>
-                </section>
-                <section id="blog" className="blog">
-                    <h2>Blog</h2>
-                    <div class="blog__posts">
-                        <div className="blog__post">
-                            <div className="post__header">
-                                <h3 className="post__title">Post 1</h3>
-                            </div>
-                            <div className="post__content">
-                                <p className="post__text">This is the content of the post... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, repellendus neque numquam voluptatum cupiditate blanditiis possimus facilis reprehenderit iure officiis tenetur fuga fugit corrupti ab. Provident facilis vero aut culpa.</p>
-                            </div>
+            <section id="about" className="about">
+                <h2>About</h2>
+                <div>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minus? Impedit blanditiis id saepe omnis iusto perferendis incidunt provident distinctio, porro, et reiciendis laboriosam placeat cum eos sequi eveniet, sapiente consequatur neque reprehenderit. Doloribus consequuntur, impedit eaque iure libero animi at rerum ut repellendus architecto autem, eligendi recusandae sint! Libero modi enim nam totam officia delectus eos cum doloremque ad quae inventore optio, neque officiis vero in necessitatibus similique voluptate alias? Modi ratione quam similique, porro eligendi voluptatum tempora? At ducimus quasi dicta laboriosam porro rerum, consequatur alias unde commodi delectus officia voluptatem, modi amet odio aperiam quo sed facere esse fugiat quam incidunt quas eos! Deleniti numquam tempora quas blanditiis in quia illo iusto qui magni nulla recusandae quis saepe facere, laborum cupiditate incidunt corporis at mollitia repellat nobis voluptates autem inventore. Veritatis quisquam atque voluptatibus porro rem nihil deserunt et vero facilis commodi deleniti repellat dolorem temporibus, neque numquam fugiat aut sunt ipsum nemo officia eaque consectetur ea pariatur quia. Natus cupiditate unde saepe voluptate placeat sit modi nulla distinctio consectetur in a ipsam cum, harum veritatis. Nihil alias eaque voluptates maiores quae dicta ut deserunt et, vel hic error nostrum tenetur a, ipsum at suscipit ratione aliquam.
+                </div>
+            </section>
+            <section id="skills" className="skills">
+                <h2>Skills</h2>
+                <div>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore nam rerum accusantium, laboriosam architecto illo maxime vitae at vero quasi ratione, quas exercitationem cupiditate in perferendis libero odit repudiandae consequatur explicabo maiores nihil sapiente soluta voluptatem. Ex quia a sit, id quod aut dicta! Id harum, labore impedit, debitis quae, nesciunt beatae minus suscipit unde similique doloribus? Possimus odio doloremque mollitia! Voluptatem molestias soluta et sequi dignissimos nostrum, quas fugiat magnam at quidem harum optio labore alias nulla? Officiis excepturi quibusdam incidunt unde provident neque quisquam possimus perspiciatis consequatur amet, numquam aliquam id facere suscipit velit esse sint fugit veritatis! Quod molestiae voluptate, iste, magnam sit eos a, fuga quos odio itaque sed nam temporibus blanditiis quasi vero quae harum! Et quas officia, iste atque, debitis hic quae rerum sunt accusantium, sequi culpa sint? Iure, dolor? Mollitia iusto, eius porro vero minima debitis tempore atque dolores quis accusantium inventore officia incidunt, quisquam eaque ad sit repellendus culpa aut? Reiciendis odit quia esse quaerat eos eius corrupti, optio nisi, nostrum sapiente quam officia voluptates dignissimos? Quidem fugiat repellendus, similique nesciunt doloribus ducimus voluptate officiis expedita omnis molestiae itaque sequi ex dignissimos! Veniam molestiae corrupti eveniet voluptas. Repudiandae nisi, alias commodi necessitatibus assumenda veniam eveniet quia magnam magni neque, at aliquam natus, expedita rem quas aliquid. Necessitatibus magni porro molestiae hic, alias nemo, saepe inventore tenetur perspiciatis ullam officiis. Quo, laborum. Ipsa ducimus excepturi itaque beatae eum dicta nemo quae sint incidunt ad illum sit enim qui molestiae perferendis ab, repellendus sed facilis iste et temporibus nihil magnam doloremque eligendi. Commodi dolorem vel cupiditate veritatis iure minus inventore repudiandae maxime voluptates ullam molestias cumque dolores nobis corrupti, facere maiores quisquam aliquid nemo dolore amet officiis! Quae sit soluta nesciunt vitae laborum cumque quam architecto! Reprehenderit voluptatum laborum magni aliquam perspiciatis. Autem, est!
+                </div>
+            </section>
+            <section id="blog" className="blog">
+                <h2>Blog</h2>
+                <div class="blog__posts">
+                    <div className="blog__post">
+                        <div className="post__header">
+                            <h3 className="post__title">Post 1</h3>
                         </div>
-                        <div className="blog__post">
-                            <div className="post__header">
-                                <h3 className="post__title">Post 2</h3>
-                            </div>
-                            <div className="post__content">
-                                <p className="post__text">This is the content of the post... Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, iste. Officiis, id. Mollitia vel odio laboriosam laborum praesentium totam excepturi.</p>
-                            </div>
-                        </div>
-                        <div className="blog__post">
-                            <div className="post__header">
-                                <h3 className="post__title">Post 3</h3>
-                            </div>
-                            <div className="post__content">
-                                <p className="post__text">This is the content of the post... Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quod laboriosam laborum a quis cupiditate?</p>
-                            </div>
-                        </div>
-                        <div className="blog__post">
-                            <div className="post__header">
-                                <h3 className="post__title">Post 4</h3>
-                            </div>
-                            <div className="post__content">
-                                <p className="post__text">This is the content of the post... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ab nihil voluptas possimus sapiente iusto nulla soluta placeat repudiandae repellendus temporibus, corporis ipsa dolore eligendi?</p>
-                            </div>                            
+                        <div className="post__content">
+                            <p className="post__text">This is the content of the post... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, repellendus neque numquam voluptatum cupiditate blanditiis possimus facilis reprehenderit iure officiis tenetur fuga fugit corrupti ab. Provident facilis vero aut culpa.</p>
                         </div>
                     </div>
-                </section>
-                <section id="contact" className="contact">
-                    <h2>Contact</h2>
-                    <div>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minus? Impedit blanditiis id saepe omnis iusto perferendis incidunt provident distinctio, porro, et reiciendis laboriosam placeat cum eos sequi eveniet, sapiente consequatur neque reprehenderit. Doloribus consequuntur, impedit eaque iure libero animi at rerum ut repellendus architecto autem, eligendi recusandae sint! Libero modi enim nam totam officia delectus eos cum doloremque ad quae inventore optio, neque officiis vero in necessitatibus similique voluptate alias? Modi ratione quam similique, porro eligendi voluptatum tempora? At ducimus quasi dicta laboriosam porro rerum, consequatur alias unde commodi delectus officia voluptatem, modi amet odio aperiam quo sed facere esse fugiat quam incidunt quas eos! Deleniti numquam tempora quas blanditiis in quia illo iusto qui magni nulla recusandae quis saepe facere, laborum cupiditate incidunt corporis at mollitia repellat nobis voluptates autem inventore. Veritatis quisquam atque voluptatibus porro rem nihil deserunt et vero facilis commodi deleniti repellat dolorem temporibus, neque numquam fugiat aut sunt ipsum nemo officia eaque consectetur ea pariatur quia. Natus cupiditate unde saepe voluptate placeat sit modi nulla distinctio consectetur in a ipsam cum, harum veritatis. Nihil alias eaque voluptates maiores quae dicta ut deserunt et, vel hic error nostrum tenetur a, ipsum at suscipit ratione aliquam.
+                    <div className="blog__post">
+                        <div className="post__header">
+                            <h3 className="post__title">Post 2</h3>
+                        </div>
+                        <div className="post__content">
+                            <p className="post__text">This is the content of the post... Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, iste. Officiis, id. Mollitia vel odio laboriosam laborum praesentium totam excepturi.</p>
+                        </div>
                     </div>
-                </section>
-            </div>
-
-        </>
+                    <div className="blog__post">
+                        <div className="post__header">
+                            <h3 className="post__title">Post 3</h3>
+                        </div>
+                        <div className="post__content">
+                            <p className="post__text">This is the content of the post... Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quod laboriosam laborum a quis cupiditate?</p>
+                        </div>
+                    </div>
+                    <div className="blog__post">
+                        <div className="post__header">
+                            <h3 className="post__title">Post 4</h3>
+                        </div>
+                        <div className="post__content">
+                            <p className="post__text">This is the content of the post... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ab nihil voluptas possimus sapiente iusto nulla soluta placeat repudiandae repellendus temporibus, corporis ipsa dolore eligendi?</p>
+                        </div>                            
+                    </div>
+                </div>
+            </section>
+            <section id="contact" className="contact">
+                <h2>Contact</h2>
+                <div>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, minus? Impedit blanditiis id saepe omnis iusto perferendis incidunt provident distinctio, porro, et reiciendis laboriosam placeat cum eos sequi eveniet, sapiente consequatur neque reprehenderit. Doloribus consequuntur, impedit eaque iure libero animi at rerum ut repellendus architecto autem, eligendi recusandae sint! Libero modi enim nam totam officia delectus eos cum doloremque ad quae inventore optio, neque officiis vero in necessitatibus similique voluptate alias? Modi ratione quam similique, porro eligendi voluptatum tempora? At ducimus quasi dicta laboriosam porro rerum, consequatur alias unde commodi delectus officia voluptatem, modi amet odio aperiam quo sed facere esse fugiat quam incidunt quas eos! Deleniti numquam tempora quas blanditiis in quia illo iusto qui magni nulla recusandae quis saepe facere, laborum cupiditate incidunt corporis at mollitia repellat nobis voluptates autem inventore. Veritatis quisquam atque voluptatibus porro rem nihil deserunt et vero facilis commodi deleniti repellat dolorem temporibus, neque numquam fugiat aut sunt ipsum nemo officia eaque consectetur ea pariatur quia. Natus cupiditate unde saepe voluptate placeat sit modi nulla distinctio consectetur in a ipsam cum, harum veritatis. Nihil alias eaque voluptates maiores quae dicta ut deserunt et, vel hic error nostrum tenetur a, ipsum at suscipit ratione aliquam.
+                </div>
+            </section>
+        </div>
     ) 
 }
 
